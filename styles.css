@@ -1,0 +1,148 @@
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: #fffecf;
+    color: #7a2b81;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    /* align-items: center;  */
+    /* justify-content: center;  */
+}
+
+
+#team-logo {
+    height: 80px;
+    float: left;
+    margin-right: 10px;
+
+}
+
+.team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card {
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fffecf;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: #7a2b81;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    color: #7a2b81;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #7a2b81;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #7a2b81;
+}
+
+input[type="submit"] {
+    margin-top: 2rem;
+    background-color: #fffecf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #7a2b81;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #7a2b81;
+    color: #fffecf;
+}
+
+
+.custom-file-upload {
+    margin-top: 10px;
+}
+
+.custom-file-upload button {
+    background-color: #fffecf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #7a2b81;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.custom-file-upload button:hover {
+    background-color: #7a2b81;
+    color: #fffecf;
+}
+
+.custom-file-upload #file-name {
+    margin-left: 10px;
+}
+
+#file-name {
+    color: #7a2b81;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+}
