@@ -1,5 +1,9 @@
 <?php
-$conexion = new mysqli("localhost", "root", "", "proyecto_final");
-if ($conexion->connect_error) {
-    die("La conexión falló: " . $conexion->connect_error);
-}
+$host= "localhost";
+$username= "root";
+$password= "";
+$dbname= "proyecto final";
+
+// $connection = new mysqli($host, $username, $password, $dbname);
+
+
