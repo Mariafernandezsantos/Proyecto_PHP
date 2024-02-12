@@ -27,17 +27,16 @@
         <!-- Card equipo mirar como hacer -->
         <?php include 'data.php'; ?>
 
+    </section>
+
+    <footer>
+        <button onclick="location.href='form_add.php'">Añadir Participante</button>
         <div class="icon">
             <!-- icono de add alumna, colocar en la card -->
             <!-- <span class="material-symbols-outlined"> 
             add_task
             </span> -->
         </div>
-
-    </section>
-
-    <footer>
-        <button onclick="location.href='form_add.php'">Añadir Participante</button>
     </footer>
 </body>
 
