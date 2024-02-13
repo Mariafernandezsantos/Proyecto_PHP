@@ -10,13 +10,23 @@ if ($resultado && $resultado->num_rows > 0) {
         echo '<h4><b>' . htmlspecialchars($fila["Nombre"]) . ' ' . htmlspecialchars($fila["Apellido"]) . '</b></h4>';
         echo '<p>' . htmlspecialchars($fila["Edad"]) . ' años - ' . htmlspecialchars($fila["Nacionalidad"]) . '</p>';
         echo '<p>' . htmlspecialchars($fila["Genero"]) . '</p>';
+        echo '<form action="editar.php" method="get"';
+        echo '>
+           
+            <button type="submit" class="btn-editar">Modificar</button>
+        </form>';
         echo '</div>';
         echo '</div>';
     }
 } else {
     echo "No se encontraron miembros del equipo.";
 }
+
 $conexion->close();
  ?>
+
+
+
+
 
 

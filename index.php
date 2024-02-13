@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <img src="./img/Las Variables.png" alt="Logo del Equipo" id="team-logo">
+        <img src="./img/Las_Variables1.png" alt="Logo del Equipo" id="team-logo">
         <h1>Las Variables</h1>
     </header>
 

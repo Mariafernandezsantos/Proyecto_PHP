@@ -10,6 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nacionalidad = filter_input(INPUT_POST, 'nacionalidad', FILTER_SANITIZE_STRING);
     $genero = filter_input(INPUT_POST, 'genero', FILTER_SANITIZE_STRING);
     $url_foto = ""; 
+    $id = ""; 
 
     
     if (isset($_FILES['foto']) && $_FILES['foto']['error'] == 0) {
