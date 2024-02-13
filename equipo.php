@@ -1,10 +1,7 @@
 <?php
 include 'data.php';
-
 $sql = "SELECT * FROM equipo";
-
 $resultado = $conexion->query($sql);
-
 if ($resultado && $resultado->num_rows > 0) {
     foreach($resultado as $fila) {
         echo '<div class="card">';
@@ -19,6 +16,7 @@ if ($resultado && $resultado->num_rows > 0) {
 } else {
     echo "No se encontraron miembros del equipo.";
 }
-
 $conexion->close();
  ?>
+
+
