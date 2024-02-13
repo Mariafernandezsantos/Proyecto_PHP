@@ -1,11 +1,5 @@
-.protest-guerrilla-regular {
-    font-family: "Protest Guerrilla", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 header {
-    background-color: #fffecf;
+    background-color: #0b4779;
     color: #7a2b81;
     padding: 5px;
     text-align: center;
@@ -13,6 +7,7 @@ header {
     /* align-items: center;  */
     /* justify-content: center;  */
 }
+
 
 
 #team-logo {
@@ -46,7 +41,7 @@ header {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #fffecf;
+    background-color: #0b4779;
 }
 
 footer button {
@@ -137,12 +132,4 @@ input[type="submit"]:hover {
 
 #file-name {
     color: #7a2b81;
-}
-
-.material-symbols-outlined {
-    font-variation-settings:
-        'FILL'0,
-        'wght'400,
-        'GRAD'0,
-        'opsz'24
 }

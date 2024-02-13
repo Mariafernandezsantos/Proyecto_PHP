@@ -1,9 +1,8 @@
 <?php
-$host= "localhost";
-$username= "root";
-$password= "";
-$dbname= "proyecto final";
-
-// $connection = new mysqli($host, $username, $password, $dbname);
+require('connect.php');
+$query="SELECT * FROM equipo";
+$result=mysqli_query($conexion,$query);
+foreach($result as $item){
+}
 
 
