@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add</title>
     <link rel="stylesheet" href="styles.css?v=1">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/Las Variables.png">
 </head>
 <body>
     <form action="process_form.php" method="post" enctype="multipart/form-data">
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required>
 
-        <label for="apellidos">Apellidos:</label>
+        <label for="apellido">Apellido:</label>
         <input type="text" id="apellidos" name="apellidos" required>
 
         <label for="edad">Edad:</label>

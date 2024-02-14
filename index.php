@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" sizes="32x32" href="img/Las Variables.png">
+    
 </head>
 
 <body>
@@ -21,8 +22,11 @@
         <?php include 'equipo.php'; ?>
     </section>
 
-    <footer>
+    <div class= "add">
         <button onclick="location.href='form_add.php'">Añadir Participante</button>
+    </div>
+    <footer>
+        
     </footer>
 </body>
 
