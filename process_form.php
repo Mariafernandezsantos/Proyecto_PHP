@@ -3,16 +3,14 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     include 'data.php'; 
 
-    
-    $nombre = filter_input(INPUT_POST, 'nombre', FILTER_SANITIZE_STRING);
-    $apellido = filter_input(INPUT_POST, 'apellido', FILTER_SANITIZE_STRING);
-    $edad = filter_input(INPUT_POST, 'edad', FILTER_VALIDATE_INT);
-    $nacionalidad = filter_input(INPUT_POST, 'nacionalidad', FILTER_SANITIZE_STRING);
-    $genero = filter_input(INPUT_POST, 'genero', FILTER_SANITIZE_STRING);
+    $nombre = filter_input(INPUT_POST, 'nombre' );
+    $apellido = filter_input(INPUT_POST, 'apellido');
+    $edad = filter_input(INPUT_POST, 'edad');
+    $nacionalidad = filter_input(INPUT_POST, 'nacionalidad');
+    $genero = filter_input(INPUT_POST, 'genero');
     $url_foto = ""; 
     $id = ""; 
 
-    
     if (isset($_FILES['foto']) && $_FILES['foto']['error'] == 0) {
         $archivo = $_FILES['foto'];
         $nombreArchivo = $archivo['name'];
@@ -27,10 +25,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "<div class='mensaje-error'>Hubo un error al subir el archivo.</div>";
         }
 
-    $query= "INSERT INTO equipo(nombre, apellido, edad, nacionalidad, genero, url_foto) VALUES('$nombre','$apellido', $edad,'$nacionalidad', '$genero', '$url_foto')";
-    $resultado= mysqli_query($conexion, $query);
+        $query= "INSERT INTO equipo(nombre, apellido, edad, nacionalidad, genero, url_foto) VALUES('$nombre','$apellido', $edad,'$nacionalidad', '$genero', '$url_foto')";
+        $resultado= mysqli_query($conexion, $query);
+
+        if (!$resultado) {
+            echo "<div class='mensaje-error'>Error en la consulta SQL: " . mysqli_error($conexion) . "</div>";
+        } else {
+            echo "<div class='mensaje-exito'>Datos insertados correctamente.</div>";
+        }
+    }
 }
-}
+
+// Verifica si el método de la solicitud HTTP es POST.
+// Incluye el archivo 'data.php' que contiene la conexión a la base de datos.
+// Obtiene los valores de los campos del formulario utilizando la función filter_input.
+// Verifica si se ha enviado un archivo a través del campo 'foto' del formulario.
+// Si se ha enviado un archivo, se verifica si hay algún error en la subida del archivo.
+// Si no hay errores, se mueve el archivo a la carpeta 'uploads/' y se guarda la ruta del archivo en la variable $url_foto.
+// Se crea una consulta SQL para insertar los datos en la tabla 'equipo' de la base de datos.
+// Se ejecuta la consulta SQL y se guarda el resultado en la variable $resultado.
+// Se verifica si la consulta SQL se ejecutó correctamente utilizando la función empty. Si la consulta no se ejecutó correctamente, se muestra el mensaje de error obtenido con la función mysqli_error.
+
 
 ?>
  <!DOCTYPE html>
@@ -49,4 +64,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
  </html>
 
 
-
+<!-- Boton de vuelta a la home -->

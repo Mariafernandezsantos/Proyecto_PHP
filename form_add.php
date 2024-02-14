@@ -42,3 +42,7 @@
 </body>
 
 </html>
+
+<!-- action: especifica la URL del archivo PHP que procesará los datos del formulario cuando se envíe.
+method: especifica el método HTTP que se utilizará para enviar los datos del formulario. En este caso, el formulario utiliza el método POST para enviar los datos.
+el valor enctype="multipart/form-data" se utiliza cuando se desea enviar archivos adjuntos junto con los datos del formulario. -->

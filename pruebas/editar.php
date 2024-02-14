@@ -23,7 +23,7 @@ if ($resultado && $resultado->num_rows > 0) {
 <form action="process_edit.php" method="post">
     <input type="hidden" name="Id" value="<?php echo $row['Id']; ?>">
     <label for="Nombre">Nombre:</label>
-        <input type="text" name="Nombre" value="<?php echo htmlspecialchars($fila['Nombre']); ?>">
+        <input type="text" name="Nombre" value="<?php echo htmlspecialchars($fila['Nombre']); ?>" htmlspecialchars para prevenir ataques de inyección de código.
         <input type="text" name="Apellido" value="<?php echo htmlspecialchars($fila['Apellido']); ?>">
         <input type="number" name="Edad" value="<?php echo htmlspecialchars($fila['Edad']); ?>">
         <input type="text" name="Genero" value="<?php echo htmlspecialchars($fila['Genero']); ?>">
